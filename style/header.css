@@ -1,0 +1,10 @@
+header{
+  background-color: rgba(59, 130, 246, .5);
+}
+
+header img{
+ width: 240px;
+ height: 60px;
+ object-fit: cover; 
+ opacity: 1;
+} 
