@@ -1,10 +1,68 @@
-header{
-  background-color: rgba(59, 130, 246, .5);
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header img{
- width: 240px;
- height: 60px;
- object-fit: cover; 
- opacity: 1;
-} 
+header {
+  background-color: rgba(59, 130, 246, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.center a {
+  font-weight: bold;
+}
+
+header li {
+  list-style: none;
+}
+
+header img {
+  width: 240px;
+  height: 60px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.c1 {
+  display: flex;
+  gap: 20px;
+}
+
+.al {
+  display: none;
+  list-style: none; /* Bỏ dấu chấm */
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  top: 100%; /* Menu hiển thị bên dưới */
+  left: 0;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  min-width: 150px;
+}
+
+.al li {
+  padding: 10px;
+  flex-direction: column;
+}
+
+.al li:hover {
+  background-color: #555; /* Hiệu ứng khi hover từng mục */
+}
+
+.c2 {
+  position: relative; /* Đặt làm mốc cho menu con */
+}
+
+.c2:hover .al {
+  display: block; /* Hiển thị menu con khi hover */
+}
