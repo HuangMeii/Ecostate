@@ -48,6 +48,7 @@ header img {
   color: white;
   z-index: 10;
   min-width: 150px;
+  margin-top: 42px;
 }
 
 .al li {
@@ -65,4 +66,9 @@ header img {
 
 .c2:hover .al {
   display: block; /* Hiển thị menu con khi hover */
+}
+
+.right-icon{
+  border: solid 1px white;
+  padding: 10px;
 }
